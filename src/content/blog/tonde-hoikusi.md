@@ -128,6 +128,8 @@ heroImage: '../../assets/blog-placeholder-1.jpg'
   <figcaption>夜のフードマーケットで出会ったワンちゃんたち。旅の楽しい1コマ。</figcaption>
 </figure>
 
+<div style="margin-top: 4rem;"></div>
+
 ## 青森で3年 ── 人情と、訛りと、子どもたちの素直さ
 
 青森での3年は、土地の温かさと子どもたちの素朴さが、強く心に残っている時間でした。
