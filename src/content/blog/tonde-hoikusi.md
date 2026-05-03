@@ -65,6 +65,69 @@ heroImage: '../../assets/blog-placeholder-1.jpg'
 
 長く居られたからこそ、子どもの成長も、保護者との関係も、自分自身の保育観も、急がずゆっくり育っていく。そんな実感を持てた4年間でした。
 
+### 佐世保時代の思い出から
+
+休日には家族で九十九島の海を眺めに行ったり、水族館やイルミネーションに足を運んだり、新鮮な海の幸を味わったり、地元の居酒屋に立ち寄ったり。さらに4年という長期勤務だったからこそ、まとまった休みを使ってオーストラリアまで足をのばすこともできました。
+
+#### 佐世保で過ごした日々の風景
+
+<figure>
+  <img src="/images/sasebo-1.jpg" alt="九十九島パールシーリゾートの桟橋に立つ子どもたち" loading="lazy" />
+  <figcaption>九十九島パールシーリゾートにて。広がる海と空、子どもたちの後ろ姿。</figcaption>
+</figure>
+
+<figure>
+  <img src="/images/sasebo-6.jpg" alt="ハウステンボスの夜の青いイルミネーション" loading="lazy" />
+  <figcaption>ハウステンボスのイルミネーション。一面の青い光に包まれる夜は、何度訪れても圧倒されます。</figcaption>
+</figure>
+
+<figure>
+  <img src="/images/sasebo-7.jpg" alt="九十九島水族館 海きららのイルカショー、ジャンプの瞬間" loading="lazy" />
+  <figcaption>九十九島水族館「海きらら」のイルカショー。空高く跳ぶ瞬間に、思わず歓声があがります。</figcaption>
+</figure>
+
+<figure>
+  <img src="/images/sasebo-2.jpg" alt="盛り合わせのお刺身" loading="lazy" />
+  <figcaption>地元のお魚を盛り合わせたお刺身。新鮮さがそのまま伝わってきます。</figcaption>
+</figure>
+
+<figure>
+  <img src="/images/sasebo-5.jpg" alt="日本酒のボトルとビール、お猪口が並ぶ居酒屋のテーブル" loading="lazy" />
+  <figcaption>地元の居酒屋で味わった日本酒。仕事終わりの楽しみのひとつでした。</figcaption>
+</figure>
+
+#### まとまった休みを使ってオーストラリアへ
+
+<figure>
+  <img src="/images/sasebo-8.jpg" alt="朝霧と太陽に包まれた街並みの遠景" loading="lazy" />
+  <figcaption>展望台から望む朝の街並み。旅の始まり。</figcaption>
+</figure>
+
+<figure>
+  <img src="/images/sasebo-4.jpg" alt="川沿いの高層ビルが並ぶ街並み" loading="lazy" />
+  <figcaption>川と高層ビルが織りなす街並み。澄んだ空が印象的でした。</figcaption>
+</figure>
+
+<figure>
+  <img src="/images/sasebo-9.jpg" alt="木の枝にしがみつくコアラ" loading="lazy" />
+  <figcaption>木の上でうたた寝するコアラに会えました。</figcaption>
+</figure>
+
+<figure>
+  <img src="/images/sasebo-10.jpg" alt="芝生の上にいるカンガルーたち" loading="lazy" />
+  <figcaption>カンガルーたちと、思いがけない近さで。</figcaption>
+</figure>
+
+<figure>
+  <img src="/images/sasebo-3.jpg" alt="芝生の広場を歩くエミュー" loading="lazy" />
+  <figcaption>のんびり歩くエミュー。見上げるほどの大きさにびっくり。</figcaption>
+</figure>
+
+<figure>
+  <img src="/images/sasebo-11.jpg" alt="夜のマーケット会場で並んで座る2匹の犬" loading="lazy" />
+  <figcaption>夜のフードマーケットで出会ったワンちゃんたち。旅の楽しい1コマ。</figcaption>
+</figure>
+
 ## 青森で3年 ── 人情と、訛りと、子どもたちの素直さ
 
 青森での3年は、土地の温かさと子どもたちの素朴さが、強く心に残っている時間でした。
