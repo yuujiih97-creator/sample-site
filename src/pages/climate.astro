@@ -1,0 +1,84 @@
+---
+import CategoryPage from "../layouts/CategoryPage.astro";
+
+export const prerender = true;
+---
+
+<CategoryPage
+  title="気候"
+  lead="季節ごとの天気や暮らしへの影響、服装の目安をまとめます。"
+>
+  <section class="climate-hero">
+    <img
+      class="climate-hero-image"
+      src="https://images.unsplash.com/photo-1739294343535-08df77cfeca9?fm=jpg&q=70&w=1200&auto=format&fit=crop"
+      alt="雪が降る夜の街と灯り"
+      loading="eager"
+      decoding="async"
+      width="1200"
+      height="800"
+    >
+    <p class="climate-hero-credit">
+      Photo by
+      <a
+        href="https://unsplash.com/@domsson"
+        target="_blank"
+        rel="noopener noreferrer"
+        >Julien</a
+      >
+      on
+      <a
+        href="https://unsplash.com/photos/8ThOkm5uIuM"
+        target="_blank"
+        rel="noopener noreferrer"
+        >Unsplash</a
+      >
+    </p>
+  </section>
+
+  <section>
+    <h2>このカテゴリで扱うこと</h2>
+    <ul>
+      <li>四季の特徴と気温の目安</li>
+      <li>雪・台風・梅雨など地域特有の気象</li>
+      <li>季節ごとの服装や暮らしの工夫</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>準備中</h2>
+    <p>
+      記事は順次追加していきます。「この地域の冬はどれくらい寒いの？」など気になる点があれば教えてください。
+    </p>
+  </section>
+</CategoryPage>
+
+<style>
+.climate-hero {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  margin-bottom: 0;
+}
+.climate-hero-image {
+  width: 100%;
+  height: auto;
+  max-height: 480px;
+  object-fit: cover;
+  border-radius: 12px;
+  display: block;
+}
+.climate-hero-credit {
+  margin: 0;
+  font-size: 0.75rem;
+  color: rgb(var(--gray));
+  text-align: right;
+}
+.climate-hero-credit a {
+  color: rgb(var(--gray));
+  text-decoration: underline;
+}
+.climate-hero-credit a:hover {
+  color: rgb(var(--black));
+}
+</style>

@@ -25,9 +25,67 @@ const posts = (await getCollection("blog"))
   <body>
     <Header />
     <main>
+      <section class="hero">
+        <img
+          class="hero-image"
+          src="https://images.unsplash.com/photo-1522623349500-de37a56ea2a5?fm=jpg&q=70&w=1600&auto=format&fit=crop"
+          alt="紅葉に包まれた山門と歩く人のシルエット"
+          loading="eager"
+          decoding="async"
+          width="1600"
+          height="2000"
+        >
+        <p class="hero-credit">
+          Photo by
+          <a
+            href="https://unsplash.com/@gaspanik"
+            target="_blank"
+            rel="noopener noreferrer"
+            >Masaaki Komori</a
+          >
+          on
+          <a
+            href="https://unsplash.com/photos/silhouette-of-man-near-outside-qwPSnBvdhtI"
+            target="_blank"
+            rel="noopener noreferrer"
+            >Unsplash</a
+          >
+        </p>
+      </section>
+
       <section class="intro">
         <h1 class="site-name">{SITE_TITLE}</h1>
         <p class="bio">{SITE_DESCRIPTION}</p>
+      </section>
+
+      <section class="menu">
+        <p class="section-label">カテゴリ</p>
+        <ul class="menu-list">
+          <li class="menu-item">
+            <a href="/land/" class="menu-link">
+              <span class="menu-title">土地</span>
+              <span class="menu-desc">街の雰囲気や住みやすさ</span>
+            </a>
+          </li>
+          <li class="menu-item">
+            <a href="/people/" class="menu-link">
+              <span class="menu-title">人柄</span>
+              <span class="menu-desc">地域の人の特色や文化</span>
+            </a>
+          </li>
+          <li class="menu-item">
+            <a href="/gourmet/" class="menu-link">
+              <span class="menu-title">グルメ</span>
+              <span class="menu-desc">名物料理やおすすめの店</span>
+            </a>
+          </li>
+          <li class="menu-item">
+            <a href="/climate/" class="menu-link">
+              <span class="menu-title">気候</span>
+              <span class="menu-desc">季節ごとの天気と暮らし</span>
+            </a>
+          </li>
+        </ul>
       </section>
 
       <section class="recent-posts">
@@ -58,6 +116,32 @@ main {
   flex-direction: column;
   gap: 4rem;
 }
+.hero {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+.hero-image {
+  width: 100%;
+  height: auto;
+  max-height: 420px;
+  object-fit: cover;
+  border-radius: 12px;
+  display: block;
+}
+.hero-credit {
+  margin: 0;
+  font-size: 0.75rem;
+  color: rgb(var(--gray));
+  text-align: right;
+}
+.hero-credit a {
+  color: rgb(var(--gray));
+  text-decoration: underline;
+}
+.hero-credit a:hover {
+  color: rgb(var(--black));
+}
 .site-name {
   font-size: 1.75rem;
   margin: 0 0 0.75rem 0;
@@ -77,6 +161,53 @@ main {
   text-transform: uppercase;
   color: rgb(var(--gray));
   margin: 0 0 1rem 0;
+}
+.menu-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 0.75rem;
+}
+.menu-item {
+  list-style: none;
+}
+.menu-link {
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+  padding: 1.1rem 1.2rem;
+  background: white;
+  border: 1px solid rgb(var(--gray-light));
+  border-radius: 10px;
+  text-decoration: none;
+  color: inherit;
+  transition:
+    border-color 0.15s,
+    color 0.15s;
+}
+.menu-title {
+  font-size: 1rem;
+  font-weight: 700;
+  color: rgb(var(--black));
+  transition: color 0.15s;
+}
+.menu-desc {
+  font-size: 0.85rem;
+  color: rgb(var(--gray));
+  line-height: 1.55;
+}
+.menu-link:hover {
+  border-color: rgb(var(--accent));
+}
+.menu-link:hover .menu-title {
+  color: rgb(var(--accent));
+}
+@media (max-width: 480px) {
+  .menu-list {
+    grid-template-columns: 1fr;
+  }
 }
 .post-list {
   list-style: none;

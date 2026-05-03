@@ -1,0 +1,26 @@
+---
+import CategoryPage from "../layouts/CategoryPage.astro";
+
+export const prerender = true;
+---
+
+<CategoryPage
+  title="グルメ"
+  lead="名物料理やおすすめのお店、地元で愛される味をまとめます。"
+>
+  <section>
+    <h2>このカテゴリで扱うこと</h2>
+    <ul>
+      <li>その土地ならではの名物料理</li>
+      <li>地元で人気のお店や食堂</li>
+      <li>季節の食材や旬の楽しみ方</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>準備中</h2>
+    <p>
+      記事は順次追加していきます。気になる地域のグルメ情報があれば、ブログでリクエストしてください。
+    </p>
+  </section>
+</CategoryPage>
