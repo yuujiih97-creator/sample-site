@@ -1,6 +1,6 @@
 {
   "$schema": "node_modules/wrangler/config-schema.json",
-  "name": "sample-site",
+  "name": "ribe-hp-yuuji",
   "compatibility_date": "2026-05-02",
   "workers_dev": true,
   "preview_urls": false,
