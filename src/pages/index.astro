@@ -25,6 +25,34 @@ const posts = (await getCollection("blog"))
   <body>
     <Header />
     <main>
+      <section class="hero">
+        <img
+          class="hero-image"
+          src="https://images.unsplash.com/photo-1522623349500-de37a56ea2a5?fm=jpg&q=70&w=1600&auto=format&fit=crop"
+          alt="紅葉に包まれた山門と歩く人のシルエット"
+          loading="eager"
+          decoding="async"
+          width="1600"
+          height="2000"
+        >
+        <p class="hero-credit">
+          Photo by
+          <a
+            href="https://unsplash.com/@gaspanik"
+            target="_blank"
+            rel="noopener noreferrer"
+            >Masaaki Komori</a
+          >
+          on
+          <a
+            href="https://unsplash.com/photos/silhouette-of-man-near-outside-qwPSnBvdhtI"
+            target="_blank"
+            rel="noopener noreferrer"
+            >Unsplash</a
+          >
+        </p>
+      </section>
+
       <section class="intro">
         <h1 class="site-name">{SITE_TITLE}</h1>
         <p class="bio">{SITE_DESCRIPTION}</p>
@@ -87,6 +115,32 @@ main {
   display: flex;
   flex-direction: column;
   gap: 4rem;
+}
+.hero {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+.hero-image {
+  width: 100%;
+  height: auto;
+  max-height: 420px;
+  object-fit: cover;
+  border-radius: 12px;
+  display: block;
+}
+.hero-credit {
+  margin: 0;
+  font-size: 0.75rem;
+  color: rgb(var(--gray));
+  text-align: right;
+}
+.hero-credit a {
+  color: rgb(var(--gray));
+  text-decoration: underline;
+}
+.hero-credit a:hover {
+  color: rgb(var(--black));
 }
 .site-name {
   font-size: 1.75rem;

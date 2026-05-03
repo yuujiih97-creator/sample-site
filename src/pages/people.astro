@@ -8,6 +8,34 @@ export const prerender = true;
   title="人柄"
   lead="地域ごとの人の特色や文化、コミュニティの雰囲気をまとめます。"
 >
+  <section class="people-hero">
+    <img
+      class="people-hero-image"
+      src="https://images.unsplash.com/photo-1573416503733-adbecc952e15?fm=jpg&q=70&w=1200&auto=format&fit=crop"
+      alt="着物姿で歩く女性たち"
+      loading="eager"
+      decoding="async"
+      width="1200"
+      height="800"
+    >
+    <p class="people-hero-credit">
+      Photo by
+      <a
+        href="https://unsplash.com/@sveta_sveta_sveta"
+        target="_blank"
+        rel="noopener noreferrer"
+        >Svetlana Gumerova</a
+      >
+      on
+      <a
+        href="https://unsplash.com/photos/9_aiGIn1pLM"
+        target="_blank"
+        rel="noopener noreferrer"
+        >Unsplash</a
+      >
+    </p>
+  </section>
+
   <section>
     <h2>このカテゴリで扱うこと</h2>
     <ul>
@@ -24,3 +52,33 @@ export const prerender = true;
     </p>
   </section>
 </CategoryPage>
+
+<style>
+.people-hero {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  margin-bottom: 0;
+}
+.people-hero-image {
+  width: 100%;
+  height: auto;
+  max-height: 480px;
+  object-fit: cover;
+  border-radius: 12px;
+  display: block;
+}
+.people-hero-credit {
+  margin: 0;
+  font-size: 0.75rem;
+  color: rgb(var(--gray));
+  text-align: right;
+}
+.people-hero-credit a {
+  color: rgb(var(--gray));
+  text-decoration: underline;
+}
+.people-hero-credit a:hover {
+  color: rgb(var(--black));
+}
+</style>
