@@ -1,0 +1,30 @@
+---
+title: 'MDXを使う'
+description: 'Markdownの中でコンポーネントを使う方法'
+pubDate: 'Jun 01 2024'
+heroImage: '../../assets/blog-placeholder-5.jpg'
+---
+
+このテーマには、[@astrojs/mdx](https://docs.astro.build/en/guides/integrations-guide/mdx/) が設定されています。MDXを使うと、Markdownの記事の中にコンポーネントを埋め込めます。
+
+## MDXとは
+
+MDXは、MarkdownにJavaScriptやJSXの書き方を組み合わせられる形式です。通常の記事を書きながら、必要な場所だけにボタンや案内ボックスなどの部品を入れられます。
+
+普通の文章だけで十分な場合は、`.md` ファイルで記事を書けば問題ありません。動きのある部品を記事内で使いたい場合に、`.mdx` が役立ちます。
+
+## 例
+
+下の例では、MDXの記事の中で `HeaderLink` コンポーネントを読み込み、リンク風の部品として表示しています。
+
+import HeaderLink from '../../components/HeaderLink.astro';
+
+<HeaderLink href="#" onclick="alert('クリックしました')">
+	MDX内のコンポーネント
+</HeaderLink>
+
+## 参考リンク
+
+- [MDX Syntax Documentation](https://mdxjs.com/docs/what-is-mdx)
+- [Astro Usage Documentation](https://docs.astro.build/en/basics/astro-pages/#markdownmdx-pages)
+- **メモ:** 動きのあるコンポーネントを作る場合は、AstroのClient Directivesが必要になることがあります。

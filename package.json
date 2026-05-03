@@ -1,0 +1,45 @@
+{
+  "name": "sample-site",
+  "type": "module",
+  "version": "0.0.1",
+  "engines": {
+    "node": ">=22.12.0"
+  },
+  "scripts": {
+    "setup": "node scripts/setup.mjs",
+    "doctor": "node scripts/doctor.mjs",
+    "dev": "astro dev",
+    "build": "node scripts/generate-og-images.mjs && astro build",
+    "preview": "astro preview",
+    "astro": "astro",
+    "lint": "npm run lint:biome && npm run lint:secrets",
+    "lint:biome": "biome check .",
+    "lint:fix": "biome check --write .",
+    "format": "biome format --write .",
+    "lint:secrets": "secretlint \"**/*\"",
+    "hooks:install": "prek install --install-hooks",
+    "hooks:run": "prek run --all-files",
+    "check:project-rules": "node scripts/check-project-rules.mjs"
+  },
+  "dependencies": {
+    "@astrojs/mdx": "^5.0.4",
+    "@astrojs/rss": "^4.0.18",
+    "@astrojs/sitemap": "^3.7.2",
+    "@fontsource/noto-sans-jp": "^5.2.9",
+    "astro": "^6.1.10",
+    "astro-og-canvas": "^0.11.1",
+    "astro-pagefind": "^1.8.6",
+    "astro-robots-txt": "^1.0.0",
+    "pagefind": "^1.5.2",
+    "sharp": "^0.34.3"
+  },
+  "devDependencies": {
+    "@astrojs/cloudflare": "^13.2.2",
+    "@biomejs/biome": "^2.4.13",
+    "@j178/prek": "^0.3.11",
+    "@secretlint/secretlint-rule-preset-recommend": "^12.3.1",
+    "secretlint": "^12.3.1",
+    "wrangler": "^4.86.0"
+  },
+  "packageManager": "npm@11.13.0"
+}

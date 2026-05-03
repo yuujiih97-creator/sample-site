@@ -1,0 +1,65 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(npm run doctor)",
+      "Bash(npm run lint)",
+      "Bash(npm run lint:biome)",
+      "Bash(npm run lint:secrets)",
+      "Bash(npm run check:project-rules)",
+      "Bash(npm run hooks:run)",
+      "Bash(npm run build)",
+      "Bash(npx prek run --all-files)",
+      "Bash(npx prek validate-config prek.toml)",
+      "Bash(npm install)",
+      "Bash(npm install:*)",
+      "Bash(npm run setup)",
+      "Bash(npm run dev)",
+      "Bash(npm run preview)",
+      "Bash(npm run hooks:install)",
+      "Bash(git add:*)",
+      "Bash(git commit:*)",
+      "Bash(git push:*)"
+    ],
+    "ask": ["Bash(wrangler deploy)", "Bash(wrangler deploy:*)"],
+    "deny": [
+      "Read(./.env)",
+      "Read(./.env.*)",
+      "Edit(./.env)",
+      "Edit(./.env.*)",
+      "Write(./.env)",
+      "Write(./.env.*)",
+      "Bash(git reset --hard)",
+      "Bash(git reset --hard:*)",
+      "Bash(git checkout --)",
+      "Bash(git checkout --:*)",
+      "Bash(rm -rf)",
+      "Bash(rm -rf:*)",
+      "Bash(npm publish)",
+      "Bash(npm publish:*)"
+    ]
+  },
+  "hooks": {
+    "PreToolUse": [
+      {
+        "matcher": "Bash|Edit|MultiEdit|Write",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "node \"$CLAUDE_PROJECT_DIR\"/scripts/claude-pre-tool-use.mjs"
+          }
+        ]
+      }
+    ],
+    "PostToolUse": [
+      {
+        "matcher": "Edit|MultiEdit|Write",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "node \"$CLAUDE_PROJECT_DIR\"/scripts/claude-post-tool-use.mjs"
+          }
+        ]
+      }
+    ]
+  }
+}

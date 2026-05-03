@@ -1,0 +1,33 @@
+<div id="search" class="pagefind-ui-header"></div>
+
+<script>
+import { PagefindUI } from "@pagefind/default-ui";
+import "@pagefind/default-ui/css/ui.css";
+
+new PagefindUI({
+  element: "#search",
+  showImages: false,
+  showSubResults: true,
+  translations: {
+    placeholder: "サイト内検索",
+    zero_results: "検索結果がありません",
+    clear_search: "",
+    load_more: "もっと見る",
+    search_label: "サイト内検索",
+    filters_label: "絞り込み",
+  },
+});
+
+const searchRoot = document.querySelector("#search");
+const setClearButtonLabel = () => {
+  const clearButton = searchRoot?.querySelector(".pagefind-ui__search-clear");
+  clearButton?.setAttribute("aria-label", "検索を消す");
+  clearButton?.setAttribute("title", "検索を消す");
+};
+
+setClearButtonLabel();
+new MutationObserver(setClearButtonLabel).observe(searchRoot, {
+  childList: true,
+  subtree: true,
+});
+</script>

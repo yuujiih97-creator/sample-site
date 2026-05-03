@@ -1,0 +1,90 @@
+---
+import { getCollection } from "astro:content";
+import BaseHead from "../../components/BaseHead.astro";
+import Footer from "../../components/Footer.astro";
+import FormattedDate from "../../components/FormattedDate.astro";
+import Header from "../../components/Header.astro";
+import { SITE_TITLE } from "../../consts";
+
+export const prerender = true;
+
+const posts = (await getCollection("blog")).sort(
+  (a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf(),
+);
+---
+
+<!doctype html>
+<html lang="ja">
+  <head>
+    <BaseHead
+      title={`ブログ — ${SITE_TITLE}`}
+      description="投稿一覧"
+      ogImagePath="/og/blog/index.png"
+    />
+  </head>
+  <body>
+    <Header />
+    <main>
+      <h1 class="page-title">ブログ</h1>
+      <ul class="post-list">
+        {posts.map((post) => (
+					<li class="post-item">
+						<a href={`/blog/${post.id}/`}>
+							<span class="post-title">{post.data.title}</span>
+							<span class="post-date"><FormattedDate date={post.data.pubDate} /></span>
+						</a>
+					</li>
+				))}
+      </ul>
+    </main>
+    <Footer />
+  </body>
+</html>
+
+<style>
+main {
+  max-width: 680px;
+  margin: 0 auto;
+  padding: 4rem 1.5rem;
+}
+.page-title {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin: 0 0 2rem 0;
+  line-height: 1.2;
+}
+.post-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.post-item {
+  list-style: none;
+}
+.post-item a {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 1rem;
+  padding: 0.75rem 0;
+  border-bottom: 1px solid rgb(var(--gray-light));
+  text-decoration: none;
+  color: rgb(var(--black));
+  transition: color 0.15s;
+}
+.post-item:first-child a {
+  border-top: 1px solid rgb(var(--gray-light));
+}
+.post-item a:hover {
+  color: rgb(var(--accent));
+}
+.post-title {
+  font-size: 0.95rem;
+}
+.post-date {
+  font-size: 0.8rem;
+  color: rgb(var(--gray));
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+</style>

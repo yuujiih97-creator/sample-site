@@ -1,0 +1,236 @@
+---
+import { SITE_TITLE } from "../consts";
+import HeaderLink from "./HeaderLink.astro";
+import PagefindSearch from "./PagefindSearch.astro";
+---
+
+<header>
+  <nav>
+    <div class="nav-main">
+      <a href="/" class="site-title">{SITE_TITLE}</a>
+      <div class="nav-links">
+        <HeaderLink href="/">トップ</HeaderLink>
+        <HeaderLink href="/blog">ブログ</HeaderLink>
+      </div>
+    </div>
+    <div class="search-wrap"><PagefindSearch /></div>
+  </nav>
+</header>
+
+<style>
+header {
+  margin: 0;
+  padding: 0 1.5em;
+  background: white;
+  border-bottom: 1px solid rgb(var(--gray-light));
+}
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  max-width: 960px;
+  margin: 0 auto;
+  min-height: 56px;
+  padding: 0.75rem 0;
+}
+.nav-main {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  min-width: 0;
+}
+.site-title {
+  font-weight: 700;
+  font-size: 1rem;
+  color: rgb(var(--black));
+  text-decoration: none;
+  letter-spacing: 0.02em;
+}
+.nav-links {
+  display: flex;
+  gap: 0.25em;
+  flex-wrap: wrap;
+}
+.nav-links a {
+  padding: 0.5em 0.75em;
+  color: rgb(var(--gray-dark));
+  border-bottom: 2px solid transparent;
+  text-decoration: none;
+  font-size: 0.95rem;
+  transition: color 0.15s;
+}
+.nav-links a:hover {
+  color: rgb(var(--black));
+}
+.nav-links a.active {
+  color: rgb(var(--black));
+  border-bottom-color: rgb(var(--accent));
+}
+.search-wrap {
+  position: relative;
+  flex: 0 1 340px;
+  width: min(340px, 100%);
+}
+:global(.pagefind-ui-header) {
+  --pagefind-ui-primary: rgb(var(--accent));
+  --pagefind-ui-text: rgb(var(--black));
+  --pagefind-ui-background: white;
+  --pagefind-ui-border: rgb(var(--gray-light));
+  --pagefind-ui-border-radius: 999px;
+  --pagefind-ui-font: var(--font-atkinson), sans-serif;
+  --pagefind-ui-scale: 0.78;
+}
+:global(.pagefind-ui-header .pagefind-ui__form) {
+  margin: 0;
+}
+:global(.pagefind-ui-header .pagefind-ui__search-input) {
+  min-height: 2.55rem;
+  padding-right: 2.75rem;
+  border-color: rgba(var(--gray), 0.22);
+  background: rgba(var(--gray-light), 0.28);
+  box-shadow: none;
+  font-size: 0.95rem;
+  transition:
+    border-color 0.15s,
+    background-color 0.15s,
+    box-shadow 0.15s;
+}
+:global(.pagefind-ui-header .pagefind-ui__search-input:hover) {
+  border-color: rgba(var(--gray), 0.4);
+  background: white;
+}
+:global(.pagefind-ui-header .pagefind-ui__search-input:focus) {
+  border-color: rgb(var(--accent));
+  background: white;
+  box-shadow: 0 0 0 3px rgba(35, 55, 255, 0.12);
+}
+:global(
+    .pagefind-ui-header
+    .pagefind-ui__form
+    .pagefind-ui__search-clear.svelte-e9gkc3
+  ) {
+  display: flex;
+  top: 50%;
+  align-items: center;
+  justify-content: center;
+  width: 2rem;
+  height: 2rem;
+  padding: 0;
+  transform: translateY(-50%);
+  border-radius: 999px;
+  color: transparent;
+  font-size: 0;
+  line-height: 0;
+}
+:global(
+    .pagefind-ui-header
+    .pagefind-ui__form
+    .pagefind-ui__search-clear.svelte-e9gkc3::before
+  ) {
+  display: block;
+  width: 0.9rem;
+  height: 0.9rem;
+  margin: auto;
+  background-color: rgb(var(--gray));
+  content: "";
+  mask:
+    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='black' stroke-width='2.5' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M18 6 6 18'/%3E%3Cpath d='m6 6 12 12'/%3E%3C/svg%3E")
+    center / contain no-repeat;
+}
+:global(
+    .pagefind-ui-header
+    .pagefind-ui__form
+    .pagefind-ui__search-clear.svelte-e9gkc3:hover::before
+  ) {
+  background-color: rgb(var(--black));
+}
+:global(.pagefind-ui-header .pagefind-ui__drawer) {
+  position: absolute;
+  top: calc(100% + 0.55rem);
+  left: auto;
+  right: 0;
+  width: min(30rem, calc(100vw - 2rem));
+  margin-top: 0;
+  padding: 0.35rem 0 0.6rem;
+  max-height: min(70vh, 30rem);
+  overflow-y: auto;
+  border: 1px solid rgba(var(--gray), 0.18);
+  border-radius: 16px;
+  background: rgba(255, 255, 255, 0.98);
+  box-shadow: 0 20px 48px rgba(15, 18, 25, 0.14);
+  z-index: 20;
+}
+:global(.pagefind-ui-header .pagefind-ui__drawer.pagefind-ui__hidden) {
+  display: none;
+}
+:global(
+    .pagefind-ui-header
+    .pagefind-ui__drawer
+    .pagefind-ui__message.svelte-e9gkc3
+  ) {
+  padding: 0.5rem 1.25rem;
+  color: rgb(var(--gray));
+  font-size: 0.88rem;
+}
+:global(.pagefind-ui-header .pagefind-ui__results) {
+  padding: 0.35rem 0.85rem 0.2rem;
+}
+:global(.pagefind-ui-header .pagefind-ui__result) {
+  margin: 0;
+  padding: 0.8rem 0.75rem;
+  border-top: 1px solid rgba(var(--gray-light), 0.85);
+}
+:global(.pagefind-ui-header .pagefind-ui__result:first-child) {
+  border-top: 0;
+}
+:global(.pagefind-ui-header .pagefind-ui__result-title) {
+  font-size: 0.98rem;
+  line-height: 1.5;
+}
+:global(.pagefind-ui-header .pagefind-ui__result-excerpt) {
+  margin-top: 0.25rem;
+  color: rgb(var(--gray-dark));
+  font-size: 0.86rem;
+  line-height: 1.6;
+}
+:global(.pagefind-ui-header mark) {
+  padding: 0 0.15em;
+  border-radius: 0.25em;
+  background: rgba(35, 55, 255, 0.12);
+  color: inherit;
+}
+@media (max-width: 840px) {
+  nav {
+    align-items: stretch;
+    flex-direction: column;
+  }
+  .nav-main {
+    width: 100%;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  .search-wrap {
+    width: 100%;
+    max-width: none;
+    flex-basis: auto;
+  }
+  :global(.pagefind-ui-header .pagefind-ui__drawer) {
+    left: 0;
+    right: 0;
+    width: auto;
+  }
+}
+@media (max-width: 560px) {
+  header {
+    padding: 0 1rem;
+  }
+  .nav-links {
+    gap: 0;
+  }
+  .nav-links a {
+    padding: 0.4em 0.55em;
+    font-size: 0.9rem;
+  }
+}
+</style>

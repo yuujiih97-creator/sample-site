@@ -1,0 +1,26 @@
+minimum_prek_version = "0.3.0"
+default_install_hook_types = ["pre-commit"]
+
+[[repos]]
+repo = "local"
+
+[[repos.hooks]]
+id = "project-rules"
+name = "project safety rules"
+entry = "npm run check:project-rules"
+language = "system"
+pass_filenames = false
+
+[[repos.hooks]]
+id = "biome"
+name = "biome check"
+entry = "npm exec -- biome check ."
+language = "system"
+pass_filenames = false
+
+[[repos.hooks]]
+id = "secretlint"
+name = "secretlint"
+entry = "npm exec -- secretlint"
+language = "system"
+pass_filenames = true
