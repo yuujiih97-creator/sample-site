@@ -30,6 +30,36 @@ const posts = (await getCollection("blog"))
         <p class="bio">{SITE_DESCRIPTION}</p>
       </section>
 
+      <section class="menu">
+        <p class="section-label">カテゴリ</p>
+        <ul class="menu-list">
+          <li class="menu-item">
+            <a href="/land/" class="menu-link">
+              <span class="menu-title">土地</span>
+              <span class="menu-desc">街の雰囲気や住みやすさ</span>
+            </a>
+          </li>
+          <li class="menu-item">
+            <a href="/people/" class="menu-link">
+              <span class="menu-title">人柄</span>
+              <span class="menu-desc">地域の人の特色や文化</span>
+            </a>
+          </li>
+          <li class="menu-item">
+            <a href="/gourmet/" class="menu-link">
+              <span class="menu-title">グルメ</span>
+              <span class="menu-desc">名物料理やおすすめの店</span>
+            </a>
+          </li>
+          <li class="menu-item">
+            <a href="/climate/" class="menu-link">
+              <span class="menu-title">気候</span>
+              <span class="menu-desc">季節ごとの天気と暮らし</span>
+            </a>
+          </li>
+        </ul>
+      </section>
+
       <section class="recent-posts">
         <p class="section-label">最近の投稿</p>
         <ul class="post-list">
@@ -77,6 +107,53 @@ main {
   text-transform: uppercase;
   color: rgb(var(--gray));
   margin: 0 0 1rem 0;
+}
+.menu-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 0.75rem;
+}
+.menu-item {
+  list-style: none;
+}
+.menu-link {
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+  padding: 1.1rem 1.2rem;
+  background: white;
+  border: 1px solid rgb(var(--gray-light));
+  border-radius: 10px;
+  text-decoration: none;
+  color: inherit;
+  transition:
+    border-color 0.15s,
+    color 0.15s;
+}
+.menu-title {
+  font-size: 1rem;
+  font-weight: 700;
+  color: rgb(var(--black));
+  transition: color 0.15s;
+}
+.menu-desc {
+  font-size: 0.85rem;
+  color: rgb(var(--gray));
+  line-height: 1.55;
+}
+.menu-link:hover {
+  border-color: rgb(var(--accent));
+}
+.menu-link:hover .menu-title {
+  color: rgb(var(--accent));
+}
+@media (max-width: 480px) {
+  .menu-list {
+    grid-template-columns: 1fr;
+  }
 }
 .post-list {
   list-style: none;

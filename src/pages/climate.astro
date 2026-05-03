@@ -1,0 +1,26 @@
+---
+import CategoryPage from "../layouts/CategoryPage.astro";
+
+export const prerender = true;
+---
+
+<CategoryPage
+  title="気候"
+  lead="季節ごとの天気や暮らしへの影響、服装の目安をまとめます。"
+>
+  <section>
+    <h2>このカテゴリで扱うこと</h2>
+    <ul>
+      <li>四季の特徴と気温の目安</li>
+      <li>雪・台風・梅雨など地域特有の気象</li>
+      <li>季節ごとの服装や暮らしの工夫</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>準備中</h2>
+    <p>
+      記事は順次追加していきます。「この地域の冬はどれくらい寒いの？」など気になる点があれば教えてください。
+    </p>
+  </section>
+</CategoryPage>

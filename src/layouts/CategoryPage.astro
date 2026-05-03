@@ -1,0 +1,101 @@
+---
+import BaseHead from "../components/BaseHead.astro";
+import Footer from "../components/Footer.astro";
+import Header from "../components/Header.astro";
+import { SITE_TITLE } from "../consts";
+
+type Props = {
+  title: string;
+  lead: string;
+  ogImagePath?: string;
+};
+
+const { title, lead, ogImagePath } = Astro.props;
+---
+
+<!doctype html>
+<html lang="ja">
+  <head>
+    <BaseHead
+      title={`${title} — ${SITE_TITLE}`}
+      description={lead}
+      ogImagePath={ogImagePath}
+    />
+  </head>
+  <body>
+    <Header />
+    <main>
+      <header class="page-header">
+        <p class="breadcrumb"><a href="/">トップ</a> / {title}</p>
+        <h1 class="page-title">{title}</h1>
+        <p class="page-lead">{lead}</p>
+      </header>
+      <section class="page-body"><slot /></section>
+    </main>
+    <Footer />
+  </body>
+</html>
+
+<style>
+main {
+  max-width: 680px;
+  margin: 0 auto;
+  padding: 4rem 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+}
+.page-header {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+.breadcrumb {
+  font-size: 0.8rem;
+  color: rgb(var(--gray));
+  margin: 0;
+}
+.breadcrumb a {
+  color: rgb(var(--gray));
+  text-decoration: none;
+}
+.breadcrumb a:hover {
+  color: rgb(var(--black));
+}
+.page-title {
+  font-size: 1.75rem;
+  font-weight: 700;
+  margin: 0;
+  line-height: 1.2;
+}
+.page-lead {
+  margin: 0;
+  color: rgb(var(--gray-dark));
+  line-height: 1.7;
+  font-size: 1rem;
+}
+.page-body :global(h2) {
+  font-size: 1.1rem;
+  font-weight: 700;
+  margin: 0 0 0.75rem 0;
+}
+.page-body :global(p) {
+  margin: 0 0 1rem 0;
+  color: rgb(var(--gray-dark));
+  line-height: 1.8;
+  font-size: 0.95rem;
+}
+.page-body :global(ul) {
+  margin: 0 0 1rem 0;
+  padding-left: 1.25rem;
+  color: rgb(var(--gray-dark));
+  line-height: 1.8;
+  font-size: 0.95rem;
+}
+.page-body :global(section) {
+  margin-bottom: 2rem;
+}
+.page-body :global(section:last-child) {
+  margin-bottom: 0;
+}
+</style>
