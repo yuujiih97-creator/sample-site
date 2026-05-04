@@ -35,6 +35,8 @@ heroImage: '../../assets/blog-placeholder-1.jpg'
   <figcaption>グリコのランニングマン。何度見ても、元気をもらえる風景です。</figcaption>
 </figure>
 
+<div style="margin-top: 4rem;"></div>
+
 ## 結婚を機に北海道へ
 
 結婚を機に北海道へ移ったものの、夫の仕事の都合ですぐに別の土地へ単身赴任することになり、新婚生活はわずか2週間ほど。そこから3ヶ月、離れて暮らしながら、私はひとり北海道で保育士として働きはじめました。
@@ -153,6 +155,42 @@ heroImage: '../../assets/blog-placeholder-1.jpg'
 正直に言うと、最初は訛りがなかなか手強かったです。保護者の方やご家族とお話していて、聞き取れない部分があり、何度も聞き返してしまったことも。それでも嫌な顔ひとつせず、ゆっくり話し直してくださったり、笑いながら他の方が通訳してくれたり。土地の言葉の中に、人柄そのものがにじんでいるようにも感じました。
 
 人情と、訛りと、子どもたちの素直さ。青森で過ごした3年は、保育士としても、ひとりの暮らし手としても、忘れられない時間です。
+
+### 青森の思い出から
+
+休みの日には、青森ならではの景色や食を楽しみました。県の特産品が並ぶ青森県観光物産館アスパム、青空に映える赤い鳥居、雪に閉ざされる八甲田の山々、そして何より、新鮮な海の幸。また、青森にいた間には、能登半島へ応援に伺う機会もあり、土地と人を巡る忘れがたい時間がいくつも残りました。
+
+<figure>
+  <img src="/images/aomori-1.jpg" alt="赤い鳥居が並ぶ高台と滝の風景" loading="lazy" />
+  <figcaption>青空に映える赤い鳥居と、勢いよく流れる滝。</figcaption>
+</figure>
+
+<figure>
+  <img src="/images/aomori-2.jpg" alt="ピラミッド状に並べられた多種多様なりんご" loading="lazy" />
+  <figcaption>青森県観光物産館アスパムにて。さすが青森、りんごの品種の多さに驚きました。</figcaption>
+</figure>
+
+<figure>
+  <img src="/images/aomori-3.jpg" alt="文字が書かれた大きな浮き玉" loading="lazy" />
+  <figcaption>能登半島へ応援に伺った際に出会った、文字入りの浮き玉。土地で暮らしてきた人々の生活が伝わる一枚です。</figcaption>
+</figure>
+
+<figure>
+  <img src="/images/aomori-4.jpg" alt="新鮮なネタが並ぶお寿司の盛り合わせ" loading="lazy" />
+  <figcaption>うに、いくら、まぐろなど、新鮮なネタが並ぶお寿司。</figcaption>
+</figure>
+
+<figure>
+  <img src="/images/aomori-5.jpg" alt="まぐろがたっぷりのっかった丼" loading="lazy" />
+  <figcaption>マグロ丼。厚切りのまぐろがぎっしりで、青森らしい贅沢な一杯。</figcaption>
+</figure>
+
+<figure>
+  <img src="/images/aomori-6.jpg" alt="雪に覆われた八甲田山頂公園の案内板" loading="lazy" />
+  <figcaption>八甲田山頂公園の案内板も雪に埋もれて。青森の冬の厳しさを実感する一枚。</figcaption>
+</figure>
+
+<div style="margin-top: 4rem;"></div>
 
 ## 今、ふたたび北海道で
 
