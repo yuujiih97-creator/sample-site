@@ -63,12 +63,12 @@ heroImage: '../../assets/blog-placeholder-1.jpg'
 
 <figure>
   <img src="/images/kagawa-udon-1.jpg" alt="つるりとした讃岐うどん" loading="lazy" />
-  <figcaption>つるっとしたのど越しと、しっかりしたコシ。香川の暮らしに欠かせない一杯。（写真: ibmoon Kim / Unsplash）</figcaption>
+  <figcaption>つるっとしたのど越しと、しっかりしたコシ。香川の暮らしに欠かせない一杯。</figcaption>
 </figure>
 
 <figure>
   <img src="/images/kagawa-udon-2.jpg" alt="湯気の立つ温かいうどん" loading="lazy" />
-  <figcaption>温かいだしに浸かったうどん。冷えた日にいただくと、体の芯までほっとあたたまります。（写真: Kouji Tsuru / Unsplash）</figcaption>
+  <figcaption>温かいだしに浸かったうどん。冷えた日にいただくと、体の芯までほっとあたたまります。</figcaption>
 </figure>
 
 そして、香川にいる間にすっかり虜になったのが、<a href="https://www.ikkaku.co.jp/" target="_blank" rel="noopener noreferrer">一鶴</a>の骨付鳥。塩こしょうがピリッと効いた、皮パリパリの骨付きもも肉を、手づかみで豪快にほおばる時間は、最高のごほうびでした。あの香ばしさは、写真ではなかなか伝わりきらないので、気になる方はぜひ<a href="https://www.ikkaku.co.jp/" target="_blank" rel="noopener noreferrer">一鶴の公式サイト</a>でご覧ください。
@@ -91,12 +91,12 @@ heroImage: '../../assets/blog-placeholder-1.jpg'
 
 <figure>
   <img src="/images/utsunomiya-1.jpg" alt="きつね色に焼かれた餃子の盛り合わせ" loading="lazy" />
-  <figcaption>こんがり焼き目のついた焼き餃子。羽根つきの香ばしさがたまりません。（写真: Sergio Mena Ferreira / Unsplash）</figcaption>
+  <figcaption>こんがり焼き目のついた焼き餃子。羽根つきの香ばしさがたまりません。</figcaption>
 </figure>
 
 <figure>
   <img src="/images/utsunomiya-2.jpg" alt="ねぎを散らしたスープ仕立ての餃子" loading="lazy" />
-  <figcaption>スープ仕立ての餃子も、また違ったやさしい味わい。（写真: Fenghua / Unsplash）</figcaption>
+  <figcaption>スープ仕立ての餃子も、また違ったやさしい味わい。</figcaption>
 </figure>
 
 <div style="margin-top: 4rem;"></div>
@@ -241,9 +241,58 @@ heroImage: '../../assets/blog-placeholder-1.jpg'
 
 <figure>
   <img src="/images/hokkaido-squirrel.jpg" alt="木の枝に座るリス" loading="lazy" />
-  <figcaption>北海道の森や公園を歩いていると、リスに出会えることもあります。（写真: Ilnur Kalimullin / Unsplash）</figcaption>
+  <figcaption>北海道の森や公園を歩いていると、リスに出会えることもあります。</figcaption>
 </figure>
 
 街の近くでも少し足をのばせば、エゾリスや小鳥たちに出会える。そんな自然の身近さも、北海道の暮らしの楽しみのひとつです。
+
+### 北海道の食卓から
+
+そして、北海道といえば、やっぱり「食」。海の幸からスープカレーまで、季節の食材が豊かで、外食もちょっとした楽しみになっています。
+
+<figure>
+  <img src="/images/hokkaido-oyster.jpg" alt="殻付きの生牡蠣" loading="lazy" />
+  <figcaption>新鮮な殻付きの牡蠣。レモンともみじおろしを添えて。</figcaption>
+</figure>
+
+<figure>
+  <img src="/images/hokkaido-grilledfish.jpg" alt="串に刺した焼き魚" loading="lazy" />
+  <figcaption>串に刺した焼き魚。香ばしく焼かれて、川魚ならではの素朴な味わい。</figcaption>
+</figure>
+
+<figure>
+  <img src="/images/hokkaido-kaisen.jpg" alt="木の棚に並べられた海鮮ちらし丼の御膳" loading="lazy" />
+  <figcaption>海鮮ちらし丼の御膳。色とりどりの小鉢と一緒に、目でも楽しめる一皿。</figcaption>
+</figure>
+
+<figure>
+  <img src="/images/hokkaido-soup.jpg" alt="平打ちうどんが入った澄まし汁仕立ての一品" loading="lazy" />
+  <figcaption>平打ちうどんを澄まし汁仕立てで。だしの香りと、ひらひらした麺ののど越しがやさしい一杯。</figcaption>
+</figure>
+
+<figure>
+  <img src="/images/hokkaido-soupcurry.jpg" alt="スープカレーが並ぶ食卓" loading="lazy" />
+  <figcaption>札幌名物のスープカレー。玄米ごはんや薬味とともに、テーブルでひと工夫を楽しめるお店も。</figcaption>
+</figure>
+
+<figure>
+  <img src="/images/hokkaido-soupcurry-2.jpg" alt="季節の野菜がたっぷり入ったスープカレー" loading="lazy" />
+  <figcaption>季節の野菜がごろごろ入ったスープカレー。舞茸やかぼちゃ、ブロッコリーが主役級。</figcaption>
+</figure>
+
+<figure>
+  <img src="/images/hokkaido-soupcurry-3.jpg" alt="ハンバーグと炒り卵がのったスープカレー" loading="lazy" />
+  <figcaption>ハンバーグと炒り卵がのった、ボリュームたっぷりのスープカレー。お店ごとの個性も楽しみのひとつ。</figcaption>
+</figure>
+
+<figure>
+  <img src="/images/hokkaido-robot.jpg" alt="飲食店で活躍する配膳ロボット" loading="lazy" />
+  <figcaption>最近のお店では、こんな配膳ロボットが料理を運んでくれることも。時代を感じる一場面。</figcaption>
+</figure>
+
+<figure>
+  <img src="/images/hokkaido-sapporobeer.jpg" alt="サッポロラガービールの瓶とグラス" loading="lazy" />
+  <figcaption>道内で飲むサッポロラガービール。地元で味わうと、いつもの一杯がもうひとつ美味しく感じます。</figcaption>
+</figure>
 
 地域ごとに違う子育ての考え方や保育の文化、土地の空気感。そして、その土地ならではの自然や暮らしの楽しみ方。これから、それぞれの場所で感じたことや、転勤先での暮らしの工夫を、少しずつ書き留めていきます。
