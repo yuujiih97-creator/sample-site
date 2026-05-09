@@ -73,7 +73,7 @@ const { title, description, pubDate, updatedDate, heroImage, ogImagePath } =
       scrollbar-width: thin;
     }
     .photo-gallery > figure {
-      flex: 0 0 90%;
+      flex: 0 0 100%;
       scroll-snap-align: start;
       margin: 0;
     }
@@ -92,10 +92,30 @@ const { title, description, pubDate, updatedDate, heroImage, ogImagePath } =
       line-height: 1.55;
       padding: 0 0.25rem;
     }
-    @media (min-width: 720px) {
-      .photo-gallery > figure {
-        flex: 0 0 70%;
-      }
+    .photo-gallery-dots {
+      display: flex;
+      justify-content: center;
+      gap: 0.5rem;
+      margin: -0.5rem 0 1.75rem 0;
+    }
+    .photo-gallery-dots > button {
+      width: 8px;
+      height: 8px;
+      padding: 0;
+      border: 0;
+      border-radius: 50%;
+      background: rgb(var(--gray-light));
+      cursor: pointer;
+      transition:
+        background-color 0.2s,
+        transform 0.2s;
+    }
+    .photo-gallery-dots > button:hover {
+      background: rgb(var(--gray));
+    }
+    .photo-gallery-dots > button.active {
+      background: rgb(var(--accent));
+      transform: scale(1.25);
     }
     </style>
   </head>
@@ -128,13 +148,55 @@ const { title, description, pubDate, updatedDate, heroImage, ogImagePath } =
     <script>
     document.querySelectorAll(".photo-gallery").forEach((gallery) => {
       const el = gallery as HTMLElement;
+      const figures = Array.from(
+        el.querySelectorAll("figure"),
+      ) as HTMLElement[];
+      if (figures.length === 0) return;
       let paused = false;
+
+      // Build dot indicators
+      const dots = document.createElement("div");
+      dots.className = "photo-gallery-dots";
+      const dotButtons: HTMLButtonElement[] = [];
+      figures.forEach((_, idx) => {
+        const dot = document.createElement("button");
+        dot.type = "button";
+        dot.setAttribute("aria-label", `${idx + 1}枚目を表示`);
+        if (idx === 0) dot.classList.add("active");
+        dot.addEventListener("click", () => {
+          const target = figures[idx];
+          if (target) {
+            el.scrollTo({
+              left: target.offsetLeft - el.offsetLeft,
+              behavior: "smooth",
+            });
+          }
+        });
+        dots.appendChild(dot);
+        dotButtons.push(dot);
+      });
+      el.parentNode?.insertBefore(dots, el.nextSibling);
+
+      const updateActiveDot = () => {
+        const galleryRect = el.getBoundingClientRect();
+        let activeIdx = 0;
+        let minDistance = Infinity;
+        figures.forEach((fig, idx) => {
+          const figRect = fig.getBoundingClientRect();
+          const distance = Math.abs(figRect.left - galleryRect.left);
+          if (distance < minDistance) {
+            minDistance = distance;
+            activeIdx = idx;
+          }
+        });
+        dotButtons.forEach((dot, idx) => {
+          dot.classList.toggle("active", idx === activeIdx);
+        });
+      };
 
       const advance = () => {
         if (paused) return;
-        const figures = el.querySelectorAll("figure");
-        if (figures.length === 0) return;
-        const firstFigure = figures[0] as HTMLElement;
+        const firstFigure = figures[0];
         const currentScroll = el.scrollLeft;
         const maxScroll = el.scrollWidth - el.clientWidth;
         const figureWidth = firstFigure.offsetWidth + 12;
@@ -146,6 +208,7 @@ const { title, description, pubDate, updatedDate, heroImage, ogImagePath } =
       };
 
       setInterval(advance, 4000);
+      el.addEventListener("scroll", updateActiveDot, { passive: true });
 
       el.addEventListener("mouseenter", () => {
         paused = true;

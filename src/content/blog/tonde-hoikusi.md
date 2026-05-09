@@ -326,6 +326,26 @@ heroImage: '../../assets/blog-placeholder-1.jpg'
   <figcaption>大ぶりに開いた焼きほっけと、大根おろし。北海道ならではの脂ののった旨み。</figcaption>
 </figure>
 
+<figure>
+  <img src="/images/hokkaido-otaru-beer.jpg" alt="小樽ビールの瓶とグラス" loading="lazy" />
+  <figcaption>小樽ビール。地元の小さな醸造所が手がける、香り豊かな一杯。</figcaption>
+</figure>
+
+<figure>
+  <img src="/images/hokkaido-clam-ramen.jpg" alt="あさりとキクラゲがのったあっさり塩ラーメン" loading="lazy" />
+  <figcaption>あさりがたっぷり入った塩ラーメン。だしの旨みが体に染み渡ります。</figcaption>
+</figure>
+
+<figure>
+  <img src="/images/hokkaido-wine.jpg" alt="北海道産ワイン3種の飲みくらべセット" loading="lazy" />
+  <figcaption>北海道産ワインの3種飲みくらべ。スパークリング・白・赤と、それぞれの個性を楽しめる一皿。</figcaption>
+</figure>
+
+<figure>
+  <img src="/images/hokkaido-corn.jpg" alt="とうもろこしのかき揚げと青唐辛子、塩" loading="lazy" />
+  <figcaption>とうもろこしのかき揚げ。北海道の甘いコーンが、揚げることでさらに香ばしく。</figcaption>
+</figure>
+
 </div>
 
 地域ごとに違う子育ての考え方や保育の文化、土地の空気感。そして、その土地ならではの自然や暮らしの楽しみ方。これから、それぞれの場所で感じたことや、転勤先での暮らしの工夫を、少しずつ書き留めていきます。
