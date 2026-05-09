@@ -244,6 +244,26 @@ heroImage: '../../assets/blog-placeholder-1.jpg'
   <figcaption>八甲田山頂公園の案内板も雪に埋もれて。青森の冬の厳しさを実感する一枚。</figcaption>
 </figure>
 
+<figure>
+  <img src="/images/aomori-7.jpg" alt="カクテルグラスにいくらが山盛りに盛られた一品" loading="lazy" />
+  <figcaption>カクテルグラスに山盛りのいくら。透明な器に光る粒が、目にも華やかな一品です。</figcaption>
+</figure>
+
+<figure>
+  <img src="/images/aomori-8.jpg" alt="お肉と大根の煮物に糸唐辛子を添えた一皿" loading="lazy" />
+  <figcaption>お肉と大根の煮物。じっくり染み込んだ味わいに、糸唐辛子が彩りを添えます。</figcaption>
+</figure>
+
+<figure>
+  <img src="/images/aomori-9.jpg" alt="お刺身の盛り合わせ（白身魚・まぐろ・ぶり）" loading="lazy" />
+  <figcaption>地元で揚がった魚のお刺身盛り合わせ。白身、まぐろ、ぶりと、それぞれの旨みが引き立つ一皿。</figcaption>
+</figure>
+
+<figure>
+  <img src="/images/aomori-10.jpg" alt="マグロの赤身をカクテル仕立てにした一品" loading="lazy" />
+  <figcaption>マグロのカクテル仕立て。立体的な盛り付けで、新鮮な赤身の美しさが際立ちます。</figcaption>
+</figure>
+
 </div>
 
 <div style="margin-top: 4rem;"></div>
