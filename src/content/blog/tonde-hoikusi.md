@@ -25,6 +25,8 @@ heroImage: '../../assets/blog-placeholder-1.jpg'
 
 仕事で疲れた休日に、道頓堀を歩いてかに道楽の大きな看板やグリコのランニングマンを見上げると、不思議と元気をもらえました。「ここは自分の街だ」というあの感覚。地元・大阪のにぎやかなエネルギーが、新人時代の自分をいつも支えてくれていたように思います。
 
+<div class="photo-gallery">
+
 <figure>
   <img src="/images/osaka-1.jpg" alt="道頓堀のかに道楽の大きなカニの看板" loading="lazy" />
   <figcaption>道頓堀のかに道楽。「大阪に来たな」と思わせてくれる、名物の看板。</figcaption>
@@ -34,6 +36,8 @@ heroImage: '../../assets/blog-placeholder-1.jpg'
   <img src="/images/osaka-2.jpg" alt="道頓堀のグリコのランニングマン看板" loading="lazy" />
   <figcaption>グリコのランニングマン。何度見ても、元気をもらえる風景です。</figcaption>
 </figure>
+
+</div>
 
 <div style="margin-top: 4rem;"></div>
 
@@ -61,6 +65,8 @@ heroImage: '../../assets/blog-placeholder-1.jpg'
 
 そして、香川といえばやっぱり讃岐うどん。お昼休みや仕事帰りにふらっと立ち寄れるお店があちこちにあって、コシのあるうどんに何度も助けられました。冷たいぶっかけで小麦のうま味を楽しむ日もあれば、寒い日には温かいかけうどんで体を芯から温める日も。
 
+<div class="photo-gallery">
+
 <figure>
   <img src="/images/kagawa-udon-1.jpg" alt="つるりとした讃岐うどん" loading="lazy" />
   <figcaption>つるっとしたのど越しと、しっかりしたコシ。香川の暮らしに欠かせない一杯。</figcaption>
@@ -70,6 +76,8 @@ heroImage: '../../assets/blog-placeholder-1.jpg'
   <img src="/images/kagawa-udon-2.jpg" alt="湯気の立つ温かいうどん" loading="lazy" />
   <figcaption>温かいだしに浸かったうどん。冷えた日にいただくと、体の芯までほっとあたたまります。</figcaption>
 </figure>
+
+</div>
 
 そして、香川にいる間にすっかり虜になったのが、<a href="https://www.ikkaku.co.jp/" target="_blank" rel="noopener noreferrer">一鶴</a>の骨付鳥。塩こしょうがピリッと効いた、皮パリパリの骨付きもも肉を、手づかみで豪快にほおばる時間は、最高のごほうびでした。あの香ばしさは、写真ではなかなか伝わりきらないので、気になる方はぜひ<a href="https://www.ikkaku.co.jp/" target="_blank" rel="noopener noreferrer">一鶴の公式サイト</a>でご覧ください。
 
@@ -89,6 +97,8 @@ heroImage: '../../assets/blog-placeholder-1.jpg'
 
 忙しい日々の中で、ささやかな楽しみだったのが、宇都宮名物の餃子。仕事帰りに同僚と立ち寄ったお店で食べる焼き餃子も、休みの日にゆっくり味わう水餃子も、宇都宮の暮らしには欠かせない一皿でした。
 
+<div class="photo-gallery">
+
 <figure>
   <img src="/images/utsunomiya-1.jpg" alt="きつね色に焼かれた餃子の盛り合わせ" loading="lazy" />
   <figcaption>こんがり焼き目のついた焼き餃子。羽根つきの香ばしさがたまりません。</figcaption>
@@ -98,6 +108,8 @@ heroImage: '../../assets/blog-placeholder-1.jpg'
   <img src="/images/utsunomiya-2.jpg" alt="ねぎを散らしたスープ仕立ての餃子" loading="lazy" />
   <figcaption>スープ仕立ての餃子も、また違ったやさしい味わい。</figcaption>
 </figure>
+
+</div>
 
 <div style="margin-top: 4rem;"></div>
 
@@ -116,6 +128,8 @@ heroImage: '../../assets/blog-placeholder-1.jpg'
 休日には家族で九十九島の海を眺めに行ったり、水族館やイルミネーションに足を運んだり、新鮮な海の幸を味わったり、地元の居酒屋に立ち寄ったり。さらに4年という長期勤務だったからこそ、まとまった休みを使ってオーストラリアまで足をのばすこともできました。
 
 #### 佐世保で過ごした日々の風景
+
+<div class="photo-gallery">
 
 <figure>
   <img src="/images/sasebo-1.jpg" alt="九十九島パールシーリゾートの桟橋に立つ子どもたち" loading="lazy" />
@@ -142,7 +156,11 @@ heroImage: '../../assets/blog-placeholder-1.jpg'
   <figcaption>地元の居酒屋で味わった日本酒。仕事終わりの楽しみのひとつでした。</figcaption>
 </figure>
 
+</div>
+
 #### まとまった休みを使ってオーストラリアへ
+
+<div class="photo-gallery">
 
 <figure>
   <img src="/images/sasebo-8.jpg" alt="朝霧と太陽に包まれた街並みの遠景" loading="lazy" />
@@ -174,6 +192,8 @@ heroImage: '../../assets/blog-placeholder-1.jpg'
   <figcaption>夜のフードマーケットで出会ったワンちゃんたち。旅の楽しい1コマ。</figcaption>
 </figure>
 
+</div>
+
 <div style="margin-top: 4rem;"></div>
 
 ## 青森で3年 ── 人情と、訛りと、子どもたちの素直さ
@@ -191,6 +211,8 @@ heroImage: '../../assets/blog-placeholder-1.jpg'
 ### 青森の思い出から
 
 休みの日には、青森ならではの景色や食を楽しみました。県の特産品が並ぶ青森県観光物産館アスパム、青空に映える赤い鳥居、雪に閉ざされる八甲田の山々、そして何より、新鮮な海の幸。また、青森にいた間には、能登半島へ応援に伺う機会もあり、土地と人を巡る忘れがたい時間がいくつも残りました。
+
+<div class="photo-gallery">
 
 <figure>
   <img src="/images/aomori-1.jpg" alt="赤い鳥居が並ぶ高台と滝の風景" loading="lazy" />
@@ -222,6 +244,8 @@ heroImage: '../../assets/blog-placeholder-1.jpg'
   <figcaption>八甲田山頂公園の案内板も雪に埋もれて。青森の冬の厳しさを実感する一枚。</figcaption>
 </figure>
 
+</div>
+
 <div style="margin-top: 4rem;"></div>
 
 ## 今、ふたたび北海道で
@@ -249,6 +273,8 @@ heroImage: '../../assets/blog-placeholder-1.jpg'
 ### 北海道の食卓から
 
 そして、北海道といえば、やっぱり「食」。海の幸からスープカレーまで、季節の食材が豊かで、外食もちょっとした楽しみになっています。
+
+<div class="photo-gallery">
 
 <figure>
   <img src="/images/hokkaido-oyster.jpg" alt="殻付きの生牡蠣" loading="lazy" />
@@ -294,5 +320,12 @@ heroImage: '../../assets/blog-placeholder-1.jpg'
   <img src="/images/hokkaido-sapporobeer.jpg" alt="サッポロラガービールの瓶とグラス" loading="lazy" />
   <figcaption>道内で飲むサッポロラガービール。地元で味わうと、いつもの一杯がもうひとつ美味しく感じます。</figcaption>
 </figure>
+
+<figure>
+  <img src="/images/hokkaido-hokke.jpg" alt="開きの焼きほっけと大根おろし" loading="lazy" />
+  <figcaption>大ぶりに開いた焼きほっけと、大根おろし。北海道ならではの脂ののった旨み。</figcaption>
+</figure>
+
+</div>
 
 地域ごとに違う子育ての考え方や保育の文化、土地の空気感。そして、その土地ならではの自然や暮らしの楽しみ方。これから、それぞれの場所で感じたことや、転勤先での暮らしの工夫を、少しずつ書き留めていきます。

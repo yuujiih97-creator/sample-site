@@ -60,6 +60,44 @@ const { title, description, pubDate, updatedDate, heroImage, ogImagePath } =
       font-style: italic;
     }
     </style>
+    <style is:global>
+    .photo-gallery {
+      display: flex;
+      gap: 0.75rem;
+      overflow-x: auto;
+      scroll-snap-type: x mandatory;
+      scroll-behavior: smooth;
+      -webkit-overflow-scrolling: touch;
+      padding: 0.5rem 0 1.25rem 0;
+      margin: 1.75rem 0;
+      scrollbar-width: thin;
+    }
+    .photo-gallery > figure {
+      flex: 0 0 90%;
+      scroll-snap-align: start;
+      margin: 0;
+    }
+    .photo-gallery > figure img {
+      width: 100%;
+      aspect-ratio: 4 / 3;
+      object-fit: cover;
+      border-radius: 10px;
+      display: block;
+      background: rgb(var(--gray-light));
+    }
+    .photo-gallery > figure figcaption {
+      font-size: 0.85rem;
+      color: rgb(var(--gray));
+      margin-top: 0.5rem;
+      line-height: 1.55;
+      padding: 0 0.25rem;
+    }
+    @media (min-width: 720px) {
+      .photo-gallery > figure {
+        flex: 0 0 70%;
+      }
+    }
+    </style>
   </head>
 
   <body>
@@ -87,5 +125,47 @@ const { title, description, pubDate, updatedDate, heroImage, ogImagePath } =
       </article>
     </main>
     <Footer />
+    <script>
+    document.querySelectorAll(".photo-gallery").forEach((gallery) => {
+      const el = gallery as HTMLElement;
+      let paused = false;
+
+      const advance = () => {
+        if (paused) return;
+        const figures = el.querySelectorAll("figure");
+        if (figures.length === 0) return;
+        const firstFigure = figures[0] as HTMLElement;
+        const currentScroll = el.scrollLeft;
+        const maxScroll = el.scrollWidth - el.clientWidth;
+        const figureWidth = firstFigure.offsetWidth + 12;
+        if (currentScroll >= maxScroll - 10) {
+          el.scrollTo({ left: 0, behavior: "smooth" });
+        } else {
+          el.scrollBy({ left: figureWidth, behavior: "smooth" });
+        }
+      };
+
+      setInterval(advance, 4000);
+
+      el.addEventListener("mouseenter", () => {
+        paused = true;
+      });
+      el.addEventListener("mouseleave", () => {
+        paused = false;
+      });
+      el.addEventListener(
+        "touchstart",
+        () => {
+          paused = true;
+        },
+        { passive: true },
+      );
+      el.addEventListener("touchend", () => {
+        setTimeout(() => {
+          paused = false;
+        }, 3000);
+      });
+    });
+    </script>
   </body>
 </html>
